@@ -1,10 +1,8 @@
-Jenkinsfile (Declarative Pipeline)
-pipeline {
-    agent { docker 'maven:3-alpine' } 
+pipeline { 
     stages {
-        stage('Example Build') {
+        stage('Test Stage') {
             steps {
-                sh 'mvn -B clean verify'
+                echo "Test Jenkins File"
             }
         }
     }
